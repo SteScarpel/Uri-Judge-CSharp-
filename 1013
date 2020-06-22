@@ -1,0 +1,19 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+            string[] maior = Console.ReadLine().Split(' ');
+            int a = int.Parse(maior[0]);
+            int b = int.Parse(maior[1]);
+            int c = int.Parse(maior[2]);
+
+            int maiorAB = (a + b + Math.Abs(a - b)) / 2;
+            int maiorABC = (maiorAB + c + Math.Abs(maiorAB - c)) / 2;
+
+            Console.WriteLine(""+maiorABC+" eh o maior");
+
+    }
+
+}
