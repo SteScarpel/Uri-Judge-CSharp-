@@ -1,0 +1,22 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+   string[] p1 = Console.ReadLine().Split(' ');
+            int v1 = int.Parse(p1[0]);
+            int v2 = int.Parse(p1[1]);
+            double v3 = double.Parse(p1[2]);
+
+            string[] p2 = Console.ReadLine().Split(' ');
+            int v4 = int.Parse(p2[0]);
+            int v5 = int.Parse(p2[1]);
+            double v6 = double.Parse(p2[2]);
+
+            double total = (v2 * v3) + (v5 * v6);
+
+            Console.WriteLine("VALOR A PAGAR: R$ {0:0.00}", total);
+    }
+
+}
