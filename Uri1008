@@ -1,0 +1,18 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        int number = Convert.ToInt32(Console.ReadLine());
+        int horas = Convert.ToInt32(Console.ReadLine());
+        double salary = double.Parse(Console.ReadLine());
+
+        salary = (horas * salary);
+
+        Console.Write("NUMBER = "+ number+"\n");
+        Console.Write("SALARY = U$ "+salary.ToString("F")+ "\n" );
+
+    }
+
+}
